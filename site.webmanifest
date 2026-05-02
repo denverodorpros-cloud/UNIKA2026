@@ -1,0 +1,16 @@
+{
+  "name": "UNIKA OUTDOOR",
+  "short_name": "UNIKA",
+  "description": "Waterproof outdoor gear for movement, travel, and time outside.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3efe7",
+  "theme_color": "#1f4635",
+  "icons": [
+    {
+      "src": "/unika-logo-black.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
