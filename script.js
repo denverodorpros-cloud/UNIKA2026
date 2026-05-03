@@ -7,22 +7,16 @@ const moneyFormatter = new Intl.NumberFormat("en-US", {
 const productImagesByListing = {
   "1354620726": [
     "./black-backpack-main.png",
-    "./black-backpack-05.png",
     "./black-backpack-10.png",
-    "./black-backpack-04.png",
     "./black-backpack-02.png",
     "./black-backpack-03.png",
-    "./black-backpack-01.png",
-    "./black-backpack-06.png",
     "./black-backpack-07.png",
     "./black-backpack-08.png",
     "./black-backpack-09.png"
   ],
   "1368607153": [
     "./gray-backpack-02.webp",
-    "./gray-backpack-08.webp",
     "./gray-backpack-01.webp",
-    "./gray-backpack-09.webp",
     "./gray-backpack-03.webp",
     "./gray-backpack-04.webp",
     "./gray-backpack-05.webp",
@@ -63,7 +57,6 @@ const productImagesByListing = {
     "./pillow-08.jpg",
     "./pillow-02.jpg",
     "./pillow-07.jpg",
-    "./pillow-09.jpg",
     "./pillow-04.jpg",
     "./pillow-05.jpg",
     "./pillow-01.jpg",
