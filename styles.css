@@ -1460,6 +1460,34 @@ h3 {
   }
 }
 
+@media (max-width: 1320px) {
+  .hero {
+    grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  }
+
+  .hero-copy {
+    padding: clamp(30px, 4vw, 48px);
+  }
+
+  .hero-copy h1 {
+    max-width: 10ch;
+    font-size: clamp(4.1rem, 6.15vw, 5.85rem);
+    line-height: 0.82;
+  }
+
+  .hero-text {
+    max-width: 32rem;
+  }
+
+  .hero-stats strong {
+    font-size: 1.24rem;
+  }
+
+  .hero-stats span {
+    font-size: 0.78rem;
+  }
+}
+
 @media (max-width: 1120px) {
   .hero,
   .catalog-hero,
