@@ -1592,6 +1592,13 @@ h3 {
     padding-bottom: 32px;
   }
 
+  .hero,
+  .hero-copy,
+  .hero-actions,
+  .hero-stats {
+    min-width: 0;
+  }
+
   .utility-bar {
     gap: 8px 16px;
     font-size: 0.65rem;
@@ -1636,8 +1643,10 @@ h3 {
   }
 
   h1 {
-    max-width: 10ch;
-    font-size: clamp(3.4rem, 18vw, 5rem);
+    max-width: 100%;
+    font-size: clamp(2.9rem, 11.5vw, 4.05rem);
+    line-height: 0.88;
+    overflow-wrap: break-word;
   }
 
   h2 {
@@ -1646,6 +1655,12 @@ h3 {
 
   .hero-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .hero-gallery-grid {
@@ -1761,7 +1776,7 @@ h3 {
 
   h1 {
     max-width: 100%;
-    font-size: clamp(2.55rem, 13vw, 3.35rem);
+    font-size: clamp(2.45rem, 12.4vw, 3.05rem);
     line-height: 0.86;
   }
 
@@ -1782,6 +1797,7 @@ h3 {
   }
 
   .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     margin-top: 22px;
   }
