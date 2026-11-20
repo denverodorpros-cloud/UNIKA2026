@@ -2106,6 +2106,11 @@ h3 {
   min-width: 0;
 }
 
+:is(.store-purchase, .product-lead) paypal-add-to-cart-button :is(.item-title, .item-description),
+:is(.store-purchase, .product-lead) paypal-add-to-cart-button .item-header:has(#sold-out-label.hidden-sold-out-label):has(#discount-price.hidden) {
+  display: none;
+}
+
 .site-nav paypal-cart-button {
   flex: 0 0 auto;
 }
