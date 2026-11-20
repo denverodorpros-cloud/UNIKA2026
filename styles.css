@@ -2286,6 +2286,51 @@ h3 {
   margin-top: 16px;
 }
 
+.product-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-photo-grid a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: white;
+  color: var(--forest-deep);
+  text-decoration: none;
+}
+
+.product-photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.product-photo-grid span {
+  display: block;
+  padding: 10px 12px;
+  border-top: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.product-photo-grid a:hover span {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .product-photo-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .color-card {
   padding: 12px;
 }
