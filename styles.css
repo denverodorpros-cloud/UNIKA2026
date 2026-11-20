@@ -1947,7 +1947,14 @@ h3 {
 }
 
 .catalog-intro {
-  padding: clamp(8px, 2vw, 24px) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 14px;
+  padding: clamp(16px, 2.4vw, 28px);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(120deg, var(--paper-strong), var(--soft));
 }
 
 .catalog-intro p,
@@ -1959,7 +1966,228 @@ h3 {
 }
 
 .catalog-intro p {
-  margin: 10px 0;
+  margin: 8px 0 0;
+}
+
+.catalog-intro .eyebrow {
+  color: var(--forest-deep);
+  margin: 0 0 9px;
+}
+
+.catalog-intro h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.hero-product-link {
+  align-self: center;
+  font-weight: 800;
+}
+
+.store-perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.store-perks li {
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper-strong);
+  color: var(--forest-deep);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.store-perks a {
+  color: inherit;
+  text-underline-offset: 0.16em;
+}
+
+.store-collection {
+  margin: 24px 0;
+}
+
+.store-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.store-toolbar h2,
+.store-help h2 {
+  font-size: clamp(1.8rem, 3.6vw, 2.8rem);
+  line-height: 0.95;
+}
+
+.store-toolbar h2 span {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--muted);
+  font: 700 0.85rem "Manrope", sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 24px);
+}
+
+.store-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  scroll-margin-top: 115px;
+  background: white;
+}
+
+.store-card .catalog-card-media {
+  display: block;
+  border-radius: 0;
+  background: white;
+}
+
+.store-card .catalog-card-media > a {
+  display: block;
+  height: 100%;
+}
+
+.store-card .catalog-card-media:focus-visible,
+.store-card .catalog-card-media > a:focus-visible {
+  outline-offset: -4px;
+}
+
+.store-card .catalog-card-media img {
+  padding: 10px;
+}
+
+.store-card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  padding: clamp(16px, 2.2vw, 26px);
+  border-top: 1px solid var(--line);
+  background: var(--paper-strong);
+}
+
+.store-card-copy h3 {
+  margin: 0;
+  font-size: clamp(1.55rem, 2.6vw, 2.3rem);
+  line-height: 1;
+}
+
+.store-card-copy h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.store-card-copy h3 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.store-card-copy p,
+.store-help p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.store-card-copy .store-category {
+  color: var(--forest-deep);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.store-card-copy .catalog-price {
+  color: var(--ink);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.store-card-copy .store-variants {
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.store-purchase,
+.store-card-link {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.store-purchase > a {
+  width: 100%;
+  justify-content: center;
+}
+
+.store-purchase paypal-add-to-cart-button {
+  display: block;
+  width: 100%;
+}
+
+.site-nav paypal-cart-button {
+  flex: 0 0 auto;
+}
+
+.store-card-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 800;
+}
+
+.store-help {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+}
+
+@media (max-width: 920px) {
+  .store-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .store-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .store-card .catalog-card-media {
+    width: min(100%, 230px);
+    align-self: center;
+  }
+
+  .store-perks {
+    gap: 6px;
+  }
+
+  .store-perks li {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+  }
 }
 
 .catalog-jump,

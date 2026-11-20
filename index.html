@@ -27,7 +27,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=20261120">
+  <link rel="stylesheet" href="./styles.css?v=cart">
+  <script defer src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="8SKWY3UNAS9F2"></script>
+  <script defer src="./paypal-cart.js"></script>
 </head>
 <body data-page="home">
   <div class="page-shell">
@@ -56,6 +58,7 @@
         <a href="./shop.html" data-nav="shop">Shop</a>
         <a href="./story.html" data-nav="story">Story</a>
         <a href="#contact">Contact</a>
+        <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
       </nav>
     </header>
 
@@ -68,7 +71,8 @@
             Pack for river days, road trips, and rainy commutes with the UNIKA 35L waterproof roll-top backpack.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="./35l-waterproof-roll-top-backpack.html">Shop the 35L Backpack</a>
+            <a class="button button-primary" href="./shop.html">Shop All Gear</a>
+            <a class="hero-product-link text-link" href="./35l-waterproof-roll-top-backpack.html">Meet the 35L Backpack</a>
           </div>
         </div>
         <figure class="storefront-hero-media">
@@ -99,29 +103,40 @@
         </div>
       </section>
 
-      <section class="section section-featured-home">
-        <div class="section-heading">
-          <p class="eyebrow">Featured Collection</p>
-          <h2>Outdoor gear for the whole trip</h2>
+      <section class="section store-collection" aria-labelledby="home-collection-title">
+        <div class="store-toolbar">
+          <h2 id="home-collection-title">Shop the collection</h2>
+          <a class="text-link" href="./shop.html">View all gear</a>
         </div>
-        <div class="featured-home-grid">
-          <article class="featured-home-card">
-            <div class="featured-home-media">
+        <div class="store-grid">
+          <article class="product-card store-card">
+            <a class="catalog-card-media" href="./35l-waterproof-roll-top-backpack.html">
               <img src="./black-backpack-main.png" alt="UNIKA black roll-top backpack front view" width="540" height="539" loading="lazy">
-            </div>
-            <div class="featured-home-copy">
+            </a>
+            <div class="store-card-copy">
               <h3><a href="./35l-waterproof-roll-top-backpack.html">35L Waterproof Roll-Top Backpack</a></h3>
-              <p>Available in green, black, and gray.</p>
+              <p class="catalog-price">$62.99 USD</p>
+              <a class="store-card-link text-link" href="./shop.html#backpack">Shop backpacks</a>
             </div>
           </article>
-
-          <article class="featured-home-card">
-            <div class="featured-home-media">
+          <article class="product-card store-card">
+            <a class="catalog-card-media" href="./shop.html#picnic-blanket">
               <img src="./green-blanket-shop.webp" alt="Green UNIKA 2-in-1 outdoor picnic blanket" width="576" height="768" loading="lazy">
-            </div>
-            <div class="featured-home-copy">
+            </a>
+            <div class="store-card-copy">
               <h3><a href="./shop.html#picnic-blanket">2-in-1 Outdoor Picnic Blanket</a></h3>
-              <p>A foldable picnic mat that doubles as a throw.</p>
+              <p class="catalog-price">$43.81 USD</p>
+              <a class="store-card-link text-link" href="./shop.html#picnic-blanket">Shop blankets</a>
+            </div>
+          </article>
+          <article class="product-card store-card">
+            <a class="catalog-card-media" href="./shop.html#camping-pillow">
+              <img src="./pillow-shop.webp" alt="UNIKA inflatable camping and travel pillow" width="576" height="768" loading="lazy">
+            </a>
+            <div class="store-card-copy">
+              <h3><a href="./shop.html#camping-pillow">Inflatable Camping Pillow</a></h3>
+              <p class="catalog-price">$23.99 USD</p>
+              <a class="store-card-link text-link" href="./shop.html#camping-pillow">Shop pillows</a>
             </div>
           </article>
         </div>
