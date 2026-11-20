@@ -2014,6 +2014,33 @@ h3 {
   background: white;
 }
 
+[data-page="shop"] .store-card:hover {
+  transform: none;
+}
+
+@supports (grid-template-rows: subgrid) {
+  @media (min-width: 561px) {
+    [data-page="shop"] .store-card {
+      display: grid;
+      grid-row: span 7;
+      grid-template-rows: subgrid;
+      row-gap: 0;
+    }
+
+    [data-page="shop"] .store-card-copy {
+      display: grid;
+      grid-row: span 6;
+      grid-template-rows: subgrid;
+      justify-items: start;
+    }
+
+    [data-page="shop"] .store-purchase {
+      align-self: end;
+      margin-top: 0;
+    }
+  }
+}
+
 .store-card .catalog-card-media {
   display: block;
   border-radius: 0;
