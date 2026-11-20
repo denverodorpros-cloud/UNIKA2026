@@ -5,9 +5,9 @@ if (window.cartPaypal) {
   });
 }
 
-document.querySelectorAll(".store-card img[data-green-src]").forEach((photo) => {
+document.querySelectorAll("img[data-green-src]").forEach((photo) => {
   const productName = photo.alt.replace(/^Green /, "");
-  const purchase = photo.closest(".store-card").querySelector("paypal-add-to-cart-button");
+  const purchase = photo.closest(".store-card, .product-lead")?.querySelector("paypal-add-to-cart-button");
   if (!purchase) return;
 
   purchase.addEventListener("change", (event) => {

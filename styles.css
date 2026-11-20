@@ -2099,9 +2099,11 @@ h3 {
   justify-content: center;
 }
 
-.store-purchase paypal-add-to-cart-button {
+.store-purchase paypal-add-to-cart-button,
+.product-lead paypal-add-to-cart-button {
   display: block;
   width: 100%;
+  min-width: 0;
 }
 
 .site-nav paypal-cart-button {
